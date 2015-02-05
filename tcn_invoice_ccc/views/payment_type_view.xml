@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="tcn_invoice_ccc.payment_type_form">
+      <field name="name">tcn_invoice_ccc.payment_type_form</field>
+		  <field name="model">payment.type</field>
+		  <field name="inherit_id" ref="account_payment_extension.view_payment_type_form"/>
+		  <field name="type">form</field>
+		  <field name="arch" type="xml">
+		    <data>
+		      <field name="code" position="after">
+		        <field name="force_bank_payment_id"/>
+		      </field>	           
+        </data>
+      </field>
+    </record>
+  </data>
+</openerp> 
